@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#1d3557">
+<title>InfraMetrics · Plataforma Web</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head><body>
+<a class="skip" href="#main">Saltar al contenido</a>
+<div id="login" class="lg"></div>
+<div id="app" class="app hide">
+  <aside id="sb" class="sb" aria-label="Navegación principal"></aside>
+  <div class="mn">
+    <header class="top">
+      <button class="menu" id="mb" aria-label="Abrir menú">☰</button>
+      <input id="q" class="search" placeholder="Buscar activo, telemetría, código…" aria-label="Buscar activo">
+      <span class="ws"><i></i>WebSocket 100 Hz</span>
+      <button class="ibtn" id="bell" aria-label="Alertas">🔔<b id="nb">1</b></button>
+      <button class="btn pri" id="newAsset">+ Registrar activo</button>
+    </header>
+    <main id="main" tabindex="-1"></main>
+  </div>
+</div>
+<div id="modal"></div><div id="toast" class="toast hide" role="status" aria-live="polite"></div>
+<script src="app.js"></script>
+</body></html>
